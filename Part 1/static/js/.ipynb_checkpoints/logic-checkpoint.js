@@ -30,17 +30,17 @@ d3.json(url).then(function (data) {
     function mapColor(depth) {
         switch (true) {
             case depth > 90:
-                return "red";
+                return "darkred";
             case depth > 70:
-                return "orangered";
+                return "red";
             case depth > 50:
                 return "orange";
             case depth > 30:
-                return "gold";
-            case depth > 10:
                 return "yellow";
-            default:
+            case depth > 10:
                 return "lightgreen";
+            default:
+                return "green";
         }
     }
     //Magnitude size
